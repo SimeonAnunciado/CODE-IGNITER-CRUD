@@ -1,0 +1,112 @@
+body{
+            margin:0;
+            padding:0;
+            font-family:verdana;
+            font-size: 14px;
+        }
+        nav{
+            background-color: gray;
+        }
+        nav ul{
+            padding:0;
+            overflow: hidden;
+        }
+        nav ul li {
+            display: inline-block;
+            padding:10px;
+            transition: .5s ease-in-out;
+
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            padding:0;
+
+        }
+        nav ul li:hover{
+            background: #236d8e;
+        }
+        .container{
+        position: relative;
+        margin: 10px auto;
+        width: 80%;
+        overflow: hidden;
+        }
+        .container-menu{
+        position: relative;
+        margin: auto;
+        width: 80%;
+        overflow: hidden;
+        }
+        .img{
+            height: 200px;
+            width: auto;
+        }
+        .container-img{
+            margin: 30px auto;
+            width: 20%;
+        }
+        .container-img .btn-img{
+            text-align: center;
+            background: #2174ca;
+            padding: 10px;
+            text-decoration: none;
+            width: auto;
+            padding: auto;
+            color: white;
+            border-radius: 4px;
+        }
+        .img-wrap{
+            text-align: center;
+        }
+
+        *{box-sizing: border-box;}
+        .container-skill{
+            width: 100%;
+            background: lightgray;
+            border-radius: 4px;
+        }
+        .skill{
+            line-height: 30px;
+            text-align: right;
+            padding-right: 20px;
+            border-radius: 4px;
+
+        }
+        .html{width: 80%; background:orange;}
+        .css{width: 60%; background:#f44336;}
+        .js{width: 40%; background:#607d8b;}
+        .jquery{width: 50%; background:#795548;}
+        .php{width: 75%; background:#3f51b5;}
+        .wordpress{width: 65%; background:#673ab7;}
+
+        
+        footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+        }
+
+footer {
+    background: #444444;
+    padding: 34px;
+    margin-top: 50px;
+        }
+
+        .card{
+         background:red;
+        }
+
+    .menu-icon {
+    width: 100%;
+    background: red;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: right;
+    cursor: pointer;
+}
+
+        

@@ -1,0 +1,330 @@
+body{
+            margin:0;
+            padding:0;
+            font-family:verdana;
+            font-size: 14px;
+        }
+        #image-logo{
+            float: left;
+            padding-left: 30px; 
+            position: relative;
+        }
+        nav{
+            background-color: #444444;
+            z-index: 999;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        nav ul{
+            padding:0;
+            overflow: hidden;
+            /*smooth down for android*/
+            transition: max-height 1s;
+        }
+        nav ul li {
+            display: inline-block;
+            /*display: block;*/
+            /*padding:50px;*/
+            /*line-height: 50px;
+            width: 50%;*/
+            transition: .5s ease-in-out;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            padding:20px;
+            line-height: 50px;
+
+        }
+        nav ul li a:hover {
+            color: white;
+            text-decoration: none;
+        }
+        a:focus, a:hover {
+            color: #f6f6f7 !important;
+            text-decoration: none !important;
+        }
+
+        nav ul li:hover{
+            background: #236d8e;
+            /*cursor: pointer;*/
+  
+        }
+        .text-content {
+        word-spacing: 5px;
+        text-align: justify;
+       }
+        .custom-container{
+        position: relative;
+        margin: 10px auto;
+        width: 80%;
+        overflow: hidden;
+        }
+        .container-menu{
+        position: relative;
+        margin: auto;
+        width: 80%;
+        overflow: hidden;
+        }
+
+        .container-img{
+            margin: 30px auto;
+            width: 25%;
+            text-align: center;
+        }
+        .container-img p{
+            text-align: center;
+            padding: 10px 0 20px 0;
+            margin: 0;
+            font-size: 20px;
+        }
+        .img-wrap{
+            text-align: center;
+        }
+
+        *{box-sizing: border-box;}
+        .container-skill{
+            width: 100%;
+            background: lightgray;
+            border-radius: 4px;
+        }
+        .skill{
+            line-height: 30px;
+            text-align: right;
+            padding-right: 20px;
+            border-radius: 4px;
+
+        }
+        .html{width: 80%; background:orange;}
+        .css{width: 60%; background:#f44336;}
+        .js{width: 40%; background:#607d8b;}
+        .jquery{width: 50%; background:#795548;}
+        .php{width: 75%; background:#3f51b5;}
+        .wordpress{width: 65%; background:#673ab7;}
+
+        /*todo */
+        .container h3{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        
+        footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+        }
+
+footer {
+    background: #444444;
+    padding: 20px;
+    /*margin-top: 50px;*/
+        }
+
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 25%;
+        border-radius: 4px;
+        float: left;
+        margin: 30px;
+        transition: .3s;
+        }
+        .container-card a {
+        text-decoration: none;
+        color: white;
+        line-height: 30px;
+        }
+        .container-card {
+        padding: 10px;
+        text-align: center;
+        }
+        .card:hover{
+        box-shadow: 2px 8px 8px 2px rgba(0,0,0,0.2);
+        }
+        .menu-icon{
+            background: #312840;
+            width:100%;
+            text-align: right;
+            padding: 15px;
+            color:white;
+            display: none;
+            cursor: pointer;
+        }
+
+       
+        /*Media query*/
+        @media (max-width: 768px){
+            nav ul {
+                max-height: 0px;
+            }
+            nav{
+                height: initial !important;
+            }
+
+              /* nav ul{
+            }
+            display: none; instead of display none height set to 0
+           }*/
+
+            .card {
+                width: 60%;
+                float: none;
+                margin: 20px auto;
+            }
+            #skills h3, #projects h3{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .container-img{
+                text-align: center !important;
+                width: 70% !important; 
+            }
+            nav ul li {
+                box-sizing: border-box;
+                text-align: center;
+                width: 100% !important;
+                cursor: pointer;
+            }
+            .container-menu{
+                width: 100%;
+            }
+        
+            .menu-icon{
+                display: block;
+            }
+            .active{
+                max-height: 200px;
+            }
+            #image-logo img{
+             display: none;
+            }
+            #gameBtn{
+                text-align: center;
+                width: auto;
+                margin: 20px;
+                position: relative;
+                padding: 10px;
+
+            }
+
+        }
+        
+        @media (max-width: 900px){
+            nav ul {
+                max-height: 0px;
+            }
+            .card {
+                width: 50%;
+                float: none;
+                margin: 20px auto;
+            }
+            #skills h3, #projects h3{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .container-img{
+                text-align: center !important;
+                width: 70% !important; 
+            }
+            nav ul li {
+                box-sizing: border-box;
+                text-align: center;
+                width: 100% !important;
+                cursor: pointer;
+            }
+            .container-menu{
+                width: 100%;
+            }
+        
+            .menu-icon{
+                display: block;
+            }
+            .active{
+                max-height: 200px;
+            }
+
+
+        }
+
+        @media (max-width: 991px){
+
+            #gameBtn{
+                text-align: center;
+                width: auto;
+                margin: 20px;
+                position: relative;
+                padding: 10px;
+
+            }
+
+        }
+
+/*style todo app js*/
+
+
+.text-right{
+    float: right;
+    color: red; 
+    font-weight:bold; 
+    text-decoration: none;
+    cursor: pointer;
+}
+.text-right:hover{
+    text-decoration: none;
+    color: red;
+}
+
+input#filter {
+    width: 30%;
+    transition: .7s ease-in-out;
+}   
+input#filter:focus{
+    width: 100%;
+}
+
+/* Jokes Style*/
+ #loader, #resultjokes{
+            display: none;
+ }
+.list-group .list-group-item{
+            color: black;
+ }
+
+ 
+
+
+
+/*book list style*/
+
+table.table.table-bordered {
+    color: black;
+}
+form#book-form{
+    color: black;
+}
+.success, .error{
+        color:white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+    }
+
+    .success{
+        background: green;
+    }
+    .error{
+        background: red;
+    }
+    .delete{
+        cursor: pointer;
+        text-decoration: none;
+    }
+.table-bordered {
+    border: 1px solid #ddd;
+    color: black;
+}
